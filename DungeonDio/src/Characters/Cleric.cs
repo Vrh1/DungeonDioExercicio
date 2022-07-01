@@ -15,9 +15,12 @@ namespace DungeonDio.src.Characters
             this.charType = charType;
         }
 
-        public override string Attack()
+        public string Attack(int bonus)
         {
-            return this.name + " Atacou com o poder fé";
+            if (bonus != 0)
+                return this.name + " Curou os aliados com uma oração";
+            else
+                return this.name + " Ninguem pode te ouvir";
         }
 
     }

@@ -15,9 +15,12 @@ namespace DungeonDio.src.Characters
             this.charType = charType;
         }
 
-        public override string Attack()
+        public string Attack(int bonus)
         {
-            return this.name + " Atacou com suas facas";
+            if (bonus >= 1)
+                return this.name + " Atacou as costas de seu oponente!";
+            else
+                return this.name + " Atacou o inimigo com sua faca";
         }
     }
 }

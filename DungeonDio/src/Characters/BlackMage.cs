@@ -15,9 +15,14 @@ namespace DungeonDio.src.Characters
             this.charType = charType;
         }
 
-        public override string Attack()
+        int dano ;
+
+        public string Attack(int bonus)
         {
-            return this.name + " Atacou com sua magia negra!";
+            if (bonus > 6)
+                return this.name + " Atacou com sua magia negra!";
+            else
+                return this.name + " Atacou com uma magia simples";
         }
 
     }

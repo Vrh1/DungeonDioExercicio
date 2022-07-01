@@ -15,9 +15,12 @@ namespace DungeonDio.src.Characters
             this.charType = charType;
         }
 
-        public override string Attack()
+        public string Attack(int bonus)
         {
-            return this.name + " Atacou com seus punhos" ;
+            if (bonus == 1)
+                return this.name + " canalizou o golpe de forma perfeita, golpe crítico aplicado!";
+            else
+                return this.name + " Atacou com seus punhos";
         }
     }
 }
