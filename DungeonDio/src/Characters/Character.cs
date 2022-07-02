@@ -10,20 +10,20 @@ namespace DungeonDio.src.Characters
     {
         public Character(string name, int level, string charType)
         {
-            this.name = name;
-            this.level = level;
-            this.charType = charType;
+            this.Name = name;
+            this.Level = level;
+            this.CharType = charType;
         }
 
-        public string name { get; set; }
-        public int level { get; set; }
-        public string charType { get; set; }
+        public string Name { get; set; }
+        public int Level { get; set; }
+        public string CharType { get; set; }
         public int hp;
         public int mp;
 
         public override string ToString()
         {
-            return this.name + " " + this.level + " " + this.charType;
+            return this.Name + " " + this.Level + " " + this.CharType;
         }
 
         public virtual string Attack()

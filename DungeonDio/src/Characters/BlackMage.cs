@@ -10,9 +10,9 @@ namespace DungeonDio.src.Characters
     {
         public BlackMage(string name, int level, string charType) : base(name, level, charType)
         {
-            this.name = name;
-            this.level = level;
-            this.charType = charType;
+            this.Name = name;
+            this.Level = level;
+            this.CharType = charType;
             hp = level * 7;
             mp = (level * 9) + 25;
         }
@@ -20,9 +20,9 @@ namespace DungeonDio.src.Characters
         public string Attack(int bonus)
         {
             if (bonus > 6)
-                return this.name + " Atacou com sua magia negra!";
+                return this.Name + " Atacou com sua magia negra!";
             else
-                return this.name + " Atacou com uma magia simples";
+                return this.Name + " Atacou com uma magia simples";
         }
 
     }

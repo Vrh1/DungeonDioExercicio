@@ -10,9 +10,9 @@ namespace DungeonDio.src.Characters
     {
         public Cleric(string name, int level, string charType) : base(name, level, charType)
         {
-            this.name = name;
-            this.level = level;
-            this.charType = charType;
+            this.Name = name;
+            this.Level = level;
+            this.CharType = charType;
             hp = level * 8;
             mp = (level * 7) + 15;
         }
@@ -20,9 +20,9 @@ namespace DungeonDio.src.Characters
         public string Attack(int bonus)
         {
             if (bonus != 0)
-                return this.name + " Curou os aliados com uma oração";
+                return this.Name + " Curou os aliados com uma oração";
             else
-                return this.name + " Ninguem pode te ouvir";
+                return this.Name + " Ninguem pode te ouvir";
         }
 
     }

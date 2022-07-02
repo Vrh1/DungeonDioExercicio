@@ -10,9 +10,9 @@ namespace DungeonDio.src.Characters
     {
         public Fighter(string name, int level, string charType) : base(name, level, charType)
         {
-            this.name = name;
-            this.level = level;
-            this.charType = charType;
+            this.Name = name;
+            this.Level = level;
+            this.CharType = charType;
             hp = level * 12;
             mp = level + 20;
         }
@@ -20,9 +20,9 @@ namespace DungeonDio.src.Characters
         public string Attack(int bonus)
         {
             if (bonus == 1)
-                return this.name + " canalizou o golpe de forma perfeita, golpe crítico aplicado!";
+                return this.Name + " canalizou o golpe de forma perfeita, golpe crítico aplicado!";
             else
-                return this.name + " Atacou com seus punhos";
+                return this.Name + " Atacou com seus punhos";
         }
     }
 }
