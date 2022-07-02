@@ -18,6 +18,8 @@ namespace DungeonDio.src.Characters
         public string name { get; set; }
         public int level { get; set; }
         public string charType { get; set; }
+        public int hp;
+        public int mp;
 
         public override string ToString()
         {

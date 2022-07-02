@@ -13,6 +13,8 @@ namespace DungeonDio.src.Characters
             this.name = name;
             this.level = level;
             this.charType = charType;
+            hp = level * 12;
+            mp = level + 20;
         }
 
         public string Attack(int bonus)

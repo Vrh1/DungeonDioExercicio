@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace DungeonDio.src.Characters
 {
-    internal class Thief : Character
+    public class Thief : Character
     {
         public Thief(string name, int level, string charType) : base (name, level, charType)
         {
             this.name = name;
             this.level = level;
             this.charType = charType;
+            hp = level * 10;
+            mp = (level * 3) + 20;
         }
 
         public string Attack(int bonus)

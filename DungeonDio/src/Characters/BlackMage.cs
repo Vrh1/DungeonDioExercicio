@@ -13,9 +13,9 @@ namespace DungeonDio.src.Characters
             this.name = name;
             this.level = level;
             this.charType = charType;
+            hp = level * 7;
+            mp = (level * 9) + 25;
         }
-
-        int dano ;
 
         public string Attack(int bonus)
         {
